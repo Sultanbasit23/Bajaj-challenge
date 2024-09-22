@@ -15,7 +15,7 @@ function App() {
     try {
       const parsedInput = JSON.parse(input);
 
-      const res = await fetch(import.meta.env.VITE_API_URL + "/bfhl", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/bfhl`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
